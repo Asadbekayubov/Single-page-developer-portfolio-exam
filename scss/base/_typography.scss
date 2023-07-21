@@ -33,12 +33,14 @@
 
 h1 {
     font-size: $h1-fs;
-    line-height: $h1-lh
+    line-height: $h1-lh;
+    letter-spacing: $h1-ls;
 }
 
 h2 {
     font-size: $h2-fs;
     line-height: $h2-lh;
+    letter-spacing: $h2-ls;
 }
 
 h3 {

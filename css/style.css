@@ -306,4 +306,273 @@ template {
  */
 [hidden] {
   display: none;
+}
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  height: 100%;
+}
+
+img {
+  display: flex;
+  -o-object-fit: cover;
+     object-fit: cover; /* contain */
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+br {
+  display: none;
+}
+
+.site-divider {
+  width: 104.5%;
+  border: none;
+  height: 1px;
+  background-color: #FFFFFF;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #151515;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  font-family: "Space Grotesk", sans-serif;
+  color: #FFFFFF;
+}
+
+.container {
+  width: 100%;
+  max-width: 1210px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .container {
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+  }
+}
+/* space-grotesk-regular - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/space-grotesk-v15-latin-regular.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* space-grotesk-500 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/space-grotesk-v15-latin-500.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* space-grotesk-700 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/space-grotesk-v15-latin-700.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+h1 {
+  font-size: 8.8rem;
+  line-height: 1;
+  letter-spacing: -2.5px;
+}
+
+h2 {
+  font-size: 4.8rem;
+  line-height: 1.6;
+  letter-spacing: -1.5px;
+}
+
+h3 {
+  font-size: 2.4rem;
+  line-height: 1.3;
+}
+
+.btn {
+  position: relative;
+  color: #FFFFFF;
+}
+
+.btn:hover {
+  color: #4EE1A0;
+}
+
+.btn::before {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 0%;
+  background-color: #4EE1A0;
+  bottom: -10px;
+  left: 0;
+  transition: 0.3s;
+}
+
+.btn:hover::before {
+  width: 100%;
+}
+
+.header {
+  background-image: url(../../images/svg/header-left-bg.svg);
+  background-repeat: no-repeat;
+  background-position: top 133px left -100px;
+}
+.header .header-container {
+  position: relative;
+}
+.header .header-container .header__top {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3.9rem 0;
+  margin-bottom: 8.8rem;
+  z-index: 100;
+}
+.header .header-container .header__top .sitenav {
+  display: flex;
+  align-items: center;
+}
+.header .header-container .header__top .sitenav .sitenav__list {
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+.header .header-container .header__hero {
+  position: relative;
+  height: 56rem;
+}
+.header .header-container .header__hero .header__hero__title {
+  width: 100%;
+  max-width: 709px;
+  margin-bottom: 4.3rem;
+}
+.header .header-container .header__hero .header__hero__title span {
+  position: relative;
+}
+.header .header-container .header__hero .header__hero__title span::before {
+  position: absolute;
+  width: 100%;
+  content: "";
+  height: 6px;
+  background-color: #4EE1A0;
+  bottom: 2px;
+}
+.header .header-container .header__hero .header__hero__text {
+  width: 100%;
+  max-width: 445px;
+  color: #D9D9D9;
+  margin-bottom: 6.6rem;
+}
+.header .header-container .header__hero .header__hero__shape {
+  position: absolute;
+  right: 38rem;
+  bottom: 7rem;
+}
+.header .header-container .header__img__wrapper {
+  position: absolute;
+  right: 3.4rem;
+  top: 0;
+  width: 460px;
+  height: 720px;
+  z-index: -1;
+  background-color: #242424;
+}
+.header .header-container .header__img__wrapper .header__main__img {
+  margin-top: 141px;
+  width: 100%;
+}
+.header .header-container .header__img__wrapper .half-shape {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .header .header-container .header__hero .header__hero__shape {
+    right: 35rem;
+  }
+  .header .header-container .header__img__wrapper {
+    right: 0rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header {
+    background-position: top 90px left -265px;
+  }
+  .header .header-container .header__hero .header__hero__title {
+    max-width: 437px;
+    display: flex;
+    flex-direction: column;
+    font-size: 7.2rem;
+    gap: 1rem;
+  }
+  .header .header-container .header__hero .header__hero__title br {
+    display: block;
+  }
+  .header .header-container .header__hero .header__hero__title span::before {
+    bottom: -10px;
+    width: 90%;
+  }
+  .header .header-container .header__hero .header__hero__shape {
+    display: none;
+    visibility: hidden;
+  }
+  .header .header-container .header__img__wrapper {
+    width: 350px;
+    right: -20px;
+    height: 600px;
+  }
+  .header .header-container .header__img__wrapper .header__main__img {
+    height: 510px;
+  }
+  .header .header-container .header__img__wrapper .half-shape {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -50px;
+  }
+}
+main {
+  flex-grow: 1;
 }/*# sourceMappingURL=style.css.map */
