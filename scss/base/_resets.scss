@@ -33,17 +33,46 @@ h1,h2,h3,h4,h5,h6 {
     margin: 0;
 }
 
+
+.site-divider{
+    width: 104.5%;
+    border: none;
+    height: 1px;
+    background-color: $white-color;
+}
+
 body {
     display: flex;
     flex-direction: column;
     height: 100%;
+    background-color: $body-bg-color;
+    font-size: $body-fs;
+    line-height: $body-lh;
+    font-family: $main-font;
+    color: $body-main-color;
 }
 
 .container {
     width: 100%;
-    max-width: 1200px; // *
+    max-width: 1210px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 5rem; // *
-    padding-right: 5rem;// *
+    padding-left: 5rem; 
+    padding-right: 5rem;
+}
+
+
+
+@media screen and (max-width:768px){
+    .container{
+        padding-left: 3.2rem;
+        padding-right: 3.2rem;
+    }
+}
+
+@media screen and (max-width:375px){
+    .container{
+        padding-left: 1.6rem;
+        padding-right: 1.6rem;
+    }
 }
