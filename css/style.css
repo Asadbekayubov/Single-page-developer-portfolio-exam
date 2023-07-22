@@ -675,6 +675,7 @@ h3 {
 .main .projects .projects__cards .projects__cards__item {
   width: 100%;
   max-width: 540px;
+  margin-bottom: 7rem;
 }
 .main .projects .projects__cards .projects__cards__item .projects__cards__item__img__wrapper {
   background-image: url(../../images/png/design-portfolio.png);
@@ -720,14 +721,110 @@ h3 {
   display: none;
   gap: 3rem;
 }
+.main .projects .projects__cards .projects__cards__item:nth-child(2) .projects__cards__item__img__wrapper {
+  background-image: url(../../images/png/e-learning.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main .projects .projects__cards .projects__cards__item:nth-child(2) .projects__cards__item__img__wrapper:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../../images/png/e-learning.png);
+  cursor: pointer;
+}
+.main .projects .projects__cards .projects__cards__item:nth-child(2) .projects__cards__item__img__wrapper:hover .links__wrapper {
+  opacity: 1;
+  visibility: visible;
+}
+.main .projects .projects__cards .projects__cards__item:nth-child(3) .projects__cards__item__img__wrapper {
+  background-image: url(../../images/png/todo-img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main .projects .projects__cards .projects__cards__item:nth-child(3) .projects__cards__item__img__wrapper:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../../images/png/todo-img.png);
+  cursor: pointer;
+}
+.main .projects .projects__cards .projects__cards__item:nth-child(3) .projects__cards__item__img__wrapper:hover .links__wrapper {
+  opacity: 1;
+  visibility: visible;
+}
+.main .projects .projects__cards .projects__cards__item:nth-child(4) .projects__cards__item__img__wrapper {
+  background-image: url(../../images/png/entertainment.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main .projects .projects__cards .projects__cards__item:nth-child(4) .projects__cards__item__img__wrapper:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../../images/png/entertainment.png);
+  cursor: pointer;
+}
+.main .projects .projects__cards .projects__cards__item:nth-child(4) .projects__cards__item__img__wrapper:hover .links__wrapper {
+  opacity: 1;
+  visibility: visible;
+}
+.main .projects .projects__cards .projects__cards__item:nth-child(5) .projects__cards__item__img__wrapper {
+  background-image: url(../../images/png/memory-game.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main .projects .projects__cards .projects__cards__item:nth-child(5) .projects__cards__item__img__wrapper:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../../images/png/memory-game.png);
+  cursor: pointer;
+}
+.main .projects .projects__cards .projects__cards__item:nth-child(5) .projects__cards__item__img__wrapper:hover .links__wrapper {
+  opacity: 1;
+  visibility: visible;
+}
+.main .projects .projects__cards .projects__cards__item:nth-child(6) .projects__cards__item__img__wrapper {
+  background-image: url(../../images/png/art-gallery.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main .projects .projects__cards .projects__cards__item:nth-child(6) .projects__cards__item__img__wrapper:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../../images/png/art-gallery.png);
+  cursor: pointer;
+}
+.main .projects .projects__cards .projects__cards__item:nth-child(6) .projects__cards__item__img__wrapper:hover .links__wrapper {
+  opacity: 1;
+  visibility: visible;
+}
 .main hr {
   margin-bottom: 6rem;
   display: none;
 }
 
+@media screen and (max-width: 1200px) {
+  .main .projects .projects__cards {
+    justify-content: space-evenly;
+    gap: 2rem;
+  }
+  .main .projects .projects__cards .projects__cards__item {
+    max-width: 460px;
+  }
+  .main .projects .projects__cards .projects__cards__item .projects__cards__item__img__wrapper {
+    height: 253px;
+  }
+}
 @media screen and (max-width: 768px) {
   .main {
     background-position: top 500px right -340px;
+  }
+  .main .projects .projects__top .projects__top__title {
+    font-size: 7.2rem;
+  }
+  .main .projects .projects__cards .projects__cards__item {
+    max-width: 340px;
+    margin-bottom: 6rem;
+  }
+  .main .projects .projects__cards .projects__cards__item .projects__cards__item__img__wrapper:hover {
+    background-color: none;
+  }
+  .main .projects .projects__cards .projects__cards__item .projects__cards__item__img__wrapper .links__wrapper {
+    display: none;
+  }
+  .main .projects .projects__cards .projects__cards__item .projects__cards__item__title {
+    font-size: 2.3rem;
+  }
+  .main .projects .projects__cards .projects__cards__item .projects__cards__bottom-links {
+    display: flex;
   }
 }
 @media screen and (max-width: 727px) {
@@ -740,6 +837,17 @@ h3 {
   .main .skills .skills__item {
     text-align: center;
     max-width: 100% !important;
+  }
+}
+@media screen and (max-width: 500px) {
+  .main .projects .projects__top {
+    margin-bottom: 4rem;
+  }
+  .main .projects .projects__top .projects__top__title {
+    font-size: 4rem;
+  }
+  .main .projects .projects__cards .projects__cards__item {
+    margin-bottom: 4rem;
   }
 }
 @media screen and (max-width: 375px) {
