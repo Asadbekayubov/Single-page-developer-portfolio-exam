@@ -172,7 +172,6 @@
     }
 }
 
-
 @media screen and (max-width:768px){
     .main{
         background-position: top 500px right -340px;
@@ -187,9 +186,6 @@
                     max-width: 340px;
                     margin-bottom: 6rem;
                     .projects__cards__item__img__wrapper{
-                        &:hover{
-                            background-color:none;
-                        }
                         .links__wrapper{
                             display: none;
                         }
@@ -205,7 +201,6 @@
         }
     }
 }
-
 
 @media screen and (max-width:727px) {
     .main{
