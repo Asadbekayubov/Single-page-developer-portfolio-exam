@@ -826,6 +826,84 @@ h3 {
   .main .projects .projects__cards .projects__cards__item .projects__cards__bottom-links {
     display: flex;
   }
+  .main .projects .projects__cards .projects__cards__item:nth-child(1) .projects__cards__item__img__wrapper {
+    background-image: url(../../images/png/design-portfolio.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .main .projects .projects__cards .projects__cards__item:nth-child(1) .projects__cards__item__img__wrapper:hover {
+    background-image: url(../../images/png/design-portfolio.png);
+    cursor: pointer;
+  }
+  .main .projects .projects__cards .projects__cards__item:nth-child(1) .projects__cards__item__img__wrapper:hover .links__wrapper {
+    opacity: 1;
+    visibility: visible;
+  }
+  .main .projects .projects__cards .projects__cards__item:nth-child(2) .projects__cards__item__img__wrapper {
+    background-image: url(../../images/png/e-learning.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .main .projects .projects__cards .projects__cards__item:nth-child(2) .projects__cards__item__img__wrapper:hover {
+    background-image: url(../../images/png/e-learning.png);
+    cursor: pointer;
+  }
+  .main .projects .projects__cards .projects__cards__item:nth-child(2) .projects__cards__item__img__wrapper:hover .links__wrapper {
+    opacity: 1;
+    visibility: visible;
+  }
+  .main .projects .projects__cards .projects__cards__item:nth-child(3) .projects__cards__item__img__wrapper {
+    background-image: url(../../images/png/todo-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .main .projects .projects__cards .projects__cards__item:nth-child(3) .projects__cards__item__img__wrapper:hover {
+    background-image: url(../../images/png/todo-img.png);
+    cursor: pointer;
+  }
+  .main .projects .projects__cards .projects__cards__item:nth-child(3) .projects__cards__item__img__wrapper:hover .links__wrapper {
+    opacity: 1;
+    visibility: visible;
+  }
+  .main .projects .projects__cards .projects__cards__item:nth-child(4) .projects__cards__item__img__wrapper {
+    background-image: url(../../images/png/entertainment.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .main .projects .projects__cards .projects__cards__item:nth-child(4) .projects__cards__item__img__wrapper:hover {
+    background-image: url(../../images/png/entertainment.png);
+    cursor: pointer;
+  }
+  .main .projects .projects__cards .projects__cards__item:nth-child(4) .projects__cards__item__img__wrapper:hover .links__wrapper {
+    opacity: 1;
+    visibility: visible;
+  }
+  .main .projects .projects__cards .projects__cards__item:nth-child(5) .projects__cards__item__img__wrapper {
+    background-image: url(../../images/png/memory-game.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .main .projects .projects__cards .projects__cards__item:nth-child(5) .projects__cards__item__img__wrapper:hover {
+    background-image: url(../../images/png/memory-game.png);
+    cursor: pointer;
+  }
+  .main .projects .projects__cards .projects__cards__item:nth-child(5) .projects__cards__item__img__wrapper:hover .links__wrapper {
+    opacity: 1;
+    visibility: visible;
+  }
+  .main .projects .projects__cards .projects__cards__item:nth-child(6) .projects__cards__item__img__wrapper {
+    background-image: url(../../images/png/art-gallery.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .main .projects .projects__cards .projects__cards__item:nth-child(6) .projects__cards__item__img__wrapper:hover {
+    background-image: url(../../images/png/art-gallery.png);
+    cursor: pointer;
+  }
+  .main .projects .projects__cards .projects__cards__item:nth-child(6) .projects__cards__item__img__wrapper:hover .links__wrapper {
+    opacity: 1;
+    visibility: visible;
+  }
 }
 @media screen and (max-width: 727px) {
   .main {
