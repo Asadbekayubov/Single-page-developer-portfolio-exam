@@ -11,6 +11,7 @@
         .contact__top {
             display: flex;
             justify-content: space-between;
+            gap: 2rem;
             .contact__top__text__wrapper{
                 .contact__top__title{
                     margin-bottom: 3.6rem;
@@ -84,15 +85,40 @@
     }
 }
 
+@media screen and (max-width:768px) {
+    .footer{
+        background-position: top 587px left -368px;
+        padding-bottom: 4rem;
+        .contact{
+            .contact__top{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .contact__top__text__wrapper{
+                    .contact__top__title{
+                        text-align: center;
+                        font-size: 7.2rem;
+                        margin-bottom: 2rem;
+                    }
+                    .contact__top__text{
+                        text-align: center;
+                        max-width: 445px;
+                        margin-bottom: 4.8rem;
+                    }
+                }
+            }
+        }
+    }
+}
 
-.contact__logo {
-}
-.contact__logo__img {
-}
-.footernav {
-}
-
-.footernav__item {
-}
-.footernav__link {
+@media screen and (max-width:500px) {
+    .footer{
+        background-position: top 550px left -368px;
+        .contact{
+            .contact__bottom{
+                flex-direction: column;
+                gap: 2rem;
+            }
+        }
+    }
 }
