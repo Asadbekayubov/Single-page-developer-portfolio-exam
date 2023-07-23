@@ -483,6 +483,9 @@ h3 {
   align-items: center;
   gap: 3.2rem;
 }
+.header .header-container .header__top .sitenav .sitenav__list .sitenav__item:hover svg path {
+  fill: #4EE1A0;
+}
 .header .header-container .header__hero {
   position: relative;
   height: 56rem;
@@ -945,7 +948,7 @@ h3 {
   align-items: center;
   gap: 3.2rem;
 }
-.footer .contact .contact__bottom .footernav .footernav__list .footernav__item .footer-link:hover svg path {
+.footer .contact .contact__bottom .footernav .footernav__list .footernav__item:hover svg path {
   fill: #4EE1A0;
 }
 

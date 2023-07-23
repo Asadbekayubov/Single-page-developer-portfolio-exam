@@ -73,10 +73,8 @@
                     align-items: center;
                     gap: 3.2rem;
                     .footernav__item{
-                        .footer-link{
-                            &:hover svg path{
-                                fill: $green-color;
-                            }
+                        &:hover svg path{
+                            fill: $green-color;
                         }
                     }
                 }
